@@ -4,12 +4,12 @@ for(let i = 0;  i <allButtons.length; i++){
     const bttn = allButtons[i];
     bttn.addEventListener('click',function(event){
         count++;
-        if(count >= 6){
+        if(count >= 5){
             for(let j = 0; j < allButtons.length; j++){
                 const bttn2 = allButtons[j];
                 bttn2.disabled = true;
             }
-            alert('You cannot take more than 6 tickets!');
+            // alert('You cannot take more than 6 tickets!');
         }
         submitInputText();
         // enable Apply button
